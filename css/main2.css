@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document
+*/
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img, h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+body{ color:#1D1D1D; font-size:13px;font-style:normal; font-weight:normal; font-family:"宋体",Verdana,sans-serif;}
+em, b, i{font-style:normal;}
+p{line-height:1.25em;}
+a{color:#1D1D1D;text-decoration:none;font-family:"宋体",Verdana,sans-serif;}
+a:link, a:visited{}
+a:hover, a:active{text-decoration:underline; background-color:#FF0;}
+a.on:hover, a.cur:hover, .on a:hover, .cur a:hover{text-decoration:none;}
+img, a img{border:0 none;}
+img.no_border{background:none;border:0 none;}
+ul,li, ol{list-style-type:none; float:left;}
+.clear{clear: both; font-size:1px; line-height:1px; height:1px; overflow:hidden; width:100%;}
+.clear5{clear: both;height:5px; overflow:hidden; width:100%;}
+.clear25{clear: both;height:25px; overflow:hidden; width:100%;}
+.maring10 { margin-top:10px;}
+.maring20 { margin-top:20px;}
+.padding5 { padding-left:5px;}
+/* 首页 */
+.body{ width:1000px; height:600px; margin:0 auto; background:url(../image/background.jpg) no-repeat; position:relative; background-size:100%;}
+.body1{ width:100%; height:100%; margin:0 auto; background:url(../image/background1.jpg) no-repeat; position:relative; background-size:100%;}
+/*第一层*/
+.bottom {width:100%; height: 50px; margin:0 auto; position: absolute; bottom: 20px; text-align:center;}
+.text2 {margin:0 auto; position:relative; float:center; text-align: center;}
+.texttd{position: relative;}
+.h2 {left:150px;}
+
+
+
+.diceng{ width:1000px; height:600px; margin:0 auto; position:absolute;}
+.left{ width:220px; height:600px; margin:0; float:left; position:relative;} 
+.leftside{ width:132px; height:600px; margin:0; float:left;  background:url(../image/left.jpg) no-repeat; position:relative;}
+.leftside2{ width:88px; height:600px; margin:0; margin-left:0px; float:left; background:#000; position:relative;}
+.right{ width:780px; height:600px; margin:0; margin-left:0px; float:left; position:relative;}
+.rightside-0{ width:780px; height:420px; background:#ffc; margin:0; margin-left:0px; float:left; position:relative; overflow:hidden;}
+.rightside-420 { width:780px; height:180px; background:#9c0; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+/* 第二层*/
+.dingceng{ width:1000px; height:600px; margin:0; position:absolute;}
+.middleimg{ width:240px; height:470px; float:left; margin:0; margin-left:130px; margin-top:130px;}
+.top1{ width:200px; height:30px; margin:0; margin-left:660px; margin-top:60px;}
+.top1 .text{ font-size:26px; color:#99cc00; font-weight:bold; text-align:right;}
+.top2{ width:100px; height:10px; margin:0; margin-left:760px; margin-top:30px;}
+.top2 .text{ font-size:12px; color:#99cc00; text-align:right;}
+.dianji{ width:550px; height:140px; margin:0; margin-left:400px; margin-top:250px;}
+.dianji .left{width:100px; height:140px; float:left; margin:0; position:relative;}
+.dianji .left .img{width:92px; height:75px; overflow:hidden; border:4px solid #ff5500; border-radius:12px;}
+.dianji .left .text{width:100px; height:20px; color:#FFF; padding-top:20px; line-height:20px; text-align:center;}
+.dianji .left .text a{ font-size:20px; color:#FFF; font-weight:bold;}
+.pdleft80 { padding-left:40px;}

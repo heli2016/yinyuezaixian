@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://labs.music.baidu.com/demo/muplayer/doc/demo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>MuPlayer『百度音乐播放内核』</title>
+    <link rel="icon" type="image/x-icon" href="http://labs.music.baidu.com/demo/muplayer/doc/favicon.ico">
+    <link rel="stylesheet" href="http://labs.music.baidu.com/demo/muplayer/doc/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://labs.music.baidu.com/demo/muplayer/doc/css/demo.css">
+</head>
+<body>
+    <header id="header" class="navbar navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://labs.music.baidu.com/demo/muplayer/doc/index.html">MuPlayer</a>
+            </div>
+            <nav class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://labs.music.baidu.com/demo/muplayer/doc/index.html">首页</a></li>
+                    <li class="active"><a href="http://labs.music.baidu.com/demo/muplayer/doc/demo.html#">示例</a></li>
+                    <li><a href="http://labs.music.baidu.com/demo/muplayer/doc/api.html">API文档</a></li>
+                </ul>
+            </nav>
+            <a class="github" target="_blank" href="https://github.com/Baidu-Music-FE/muplayer"><i></i>View On GitHub</a>
+        </div>
+    </header>
+
+    <section class="jumbotron">
+        <div class="container">
+            <h1><em>Mu</em><span>Player</span> <small>Demo for Testing</small></h1>
+            <p> —— 跨平台、轻量级的音频播放解决方案。</p>
+            <p>本页提供了MuPlayer的基本调用Demo，方便学习参考及简单测试。</p>
+        </div>
+    </section>
+
+    <section id="content" class="container">
+        <div class="mod">
+            <div class="hd">快速上手</div>
+            <div class="bd">
+                <p>
+                    使用MuPlayer首先要引入MuPlayer对应版本的JS文件。你可以直接从
+                    <a target="_blank" href="https://github.com/Baidu-Music-FE/muplayer/tree/master/dist">github上</a>下载，
+                    或使用<a target="_blank" href="http://bower.io/">Bower</a>下载编译后的MuPlayer静态文件，并托管在自己的静态服务器上。
+                    同时，你也可以如下面例子中展示的那样，直接使用我们放在百度音乐CDN上的对应版本的静态资源文件。
+                </p>
+                <p>
+                    在网站加载jQuery类库的后面，引入MuPlayer。之后便可以初始化一个MuPlayer实例（ <code>baseDir</code> 是必填初始化参数，指向刚才签出的MuPlayer静态资源目录），添加一段mp3音频，开始播放：
+                </p>
+                <script src="./demo_files/f2d0436c807b3a45744c.js"></script><link rel="stylesheet" href="https://gist-assets.github.com/assets/embed-e8861c84ff85edae1cf9869dd551c98d.css"><div id="gist12305246" class="gist">
+        <div class="gist-file">
+          <div class="gist-data gist-syntax">
+            
+
+
+
+    <div class="file-data">
+      <table cellpadding="0" cellspacing="0" class="lines highlight">
+        <tbody><tr>
+          <td class="line-numbers">
+            <span class="line-number" id="file-muplayer_getting_start-html-L1" rel="file-muplayer_getting_start-html-L1">1</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L2" rel="file-muplayer_getting_start-html-L2">2</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L3" rel="file-muplayer_getting_start-html-L3">3</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L4" rel="file-muplayer_getting_start-html-L4">4</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L5" rel="file-muplayer_getting_start-html-L5">5</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L6" rel="file-muplayer_getting_start-html-L6">6</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L7" rel="file-muplayer_getting_start-html-L7">7</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L8" rel="file-muplayer_getting_start-html-L8">8</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L9" rel="file-muplayer_getting_start-html-L9">9</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L10" rel="file-muplayer_getting_start-html-L10">10</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L11" rel="file-muplayer_getting_start-html-L11">11</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L12" rel="file-muplayer_getting_start-html-L12">12</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L13" rel="file-muplayer_getting_start-html-L13">13</span>
+            <span class="line-number" id="file-muplayer_getting_start-html-L14" rel="file-muplayer_getting_start-html-L14">14</span>
+          </td>
+          <td class="line-data">
+            <pre class="line-pre"><div class="line" id="file-muplayer_getting_start-html-LC1"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://code.jquery.com/jquery-1.11.0.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span></div><div class="line" id="file-muplayer_getting_start-html-LC2"><span class="cp">&lt;!- 引入对应版本的MuPlayer，要置于jQuery之后。-&gt;</span></div><div class="line" id="file-muplayer_getting_start-html-LC3"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://mu7.bdstatic.com/cms/app/muplayer/0_9_1/player.js"</span><span class="nt">&gt;&lt;/script&gt;</span></div><div class="line" id="file-muplayer_getting_start-html-LC4">&nbsp;</div><div class="line" id="file-muplayer_getting_start-html-LC5"><span class="nt">&lt;script&gt;</span></div><div class="line" id="file-muplayer_getting_start-html-LC6"><span class="c1">// 初始化一个MuPlayer的实例。注意，我们默认使用了_mu全局命名空间。</span></div><div class="line" id="file-muplayer_getting_start-html-LC7"><span class="kd">var</span> <span class="nx">player</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">_mu</span><span class="p">.</span><span class="nx">Player</span><span class="p">({</span></div><div class="line" id="file-muplayer_getting_start-html-LC8">        <span class="c1">// baseDir是必填初始化参数，指向刚才签出的MuPlayer静态资源目录</span></div><div class="line" id="file-muplayer_getting_start-html-LC9">        <span class="nx">baseDir</span><span class="o">:</span> <span class="s1">'http://mu7.bdstatic.com/cms/app/muplayer/0_9_1/'</span></div><div class="line" id="file-muplayer_getting_start-html-LC10">    <span class="p">});</span></div><div class="line" id="file-muplayer_getting_start-html-LC11">&nbsp;</div><div class="line" id="file-muplayer_getting_start-html-LC12"><span class="c1">// 通过add方法添加需要播放的音频，并调用play方法开始播放。</span></div><div class="line" id="file-muplayer_getting_start-html-LC13"><span class="nx">player</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'http://music.baidu.com/cms/app/muplayer/test_mp3/1.mp3'</span><span class="p">).</span><span class="nx">play</span><span class="p">();</span></div><div class="line" id="file-muplayer_getting_start-html-LC14"><span class="nt">&lt;/script&gt;</span></div></pre>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+          </div>
+          <div class="gist-meta">
+            <a href="https://gist.github.com/hustKiwi/f2d0436c807b3a45744c/raw/muplayer_getting_start.html" style="float:right">view raw</a>
+            <a href="https://gist.github.com/hustKiwi/f2d0436c807b3a45744c#file-muplayer_getting_start-html">muplayer_getting_start.html</a>
+            hosted with ❤ by <a href="https://github.com/">GitHub</a>
+          </div>
+        </div>
+</div>
+
+            </div>
+        </div>
+
+        <iframe id="ifm-playlist-demo" scrolling="no" src="./demo_files/playlist-demo.htm" style="height: 884px;"></iframe>
+        <iframe id="ifm-player-demo" scrolling="no" src="./demo_files/player-demo.htm" style="height: 2615px;"></iframe>
+    </section>
+
+    <footer class="bs-footer">
+        <div class="container">
+            <p><code>MuPlayer</code>: <a target="_blank" href="https://github.com/Baidu-Music-FE/muplayer">https://github.com/Baidu-Music-FE/muplayer</a></p>
+            <p class="copyright">
+                Copyright (c) 2014<a target="_blank" href="http://labs.music.baidu.com/">
+                @MusicLab</a><a target="_blank" href="http://weibo.com/musicfe">@音乐前端</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="./demo_files/jquery.min.js"></script>
+    <script>
+    $(function() {
+        $('iframe').load(function() {
+            $(this).height($(this).contents().height());
+        });
+    });
+    </script>
+
+    <div style="display: none">
+        <script>
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F89a467ff5d4c7c906a933623c7db27bb'%3E%3C/script%3E"));
+
+        try {
+            if (console && console.log) {
+                console.log('加入百度音乐前端，跟我们做些有挑战的趣事？');
+                console.info && console.info('简历请发 %c musicfe-hr@baidu.com', 'color: #c7254e');
+            }
+        } catch (e) {}
+        </script><script src="./demo_files/h.js"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=89a467ff5d4c7c906a933623c7db27bb" target="_blank"><img border="0" src="./demo_files/21.gif" width="20" height="20"></a>
+    </div>
+
+
+<!--18386361430887762442070723-->
+<script> var _trace_page_logid = 1838636143; </script></body></html>

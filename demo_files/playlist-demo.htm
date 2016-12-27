@@ -1,0 +1,112 @@
+
+<!-- saved from url=(0064)http://labs.music.baidu.com/demo/muplayer/doc/playlist-demo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="http://labs.music.baidu.com/demo/muplayer/doc/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://labs.music.baidu.com/demo/muplayer/doc/css/playlist-demo.css">
+
+</head><body><div class="mod">
+    <div class="hd">播放列表及交互</div>
+    <div class="bd">
+        <ul id="playlist-demo">
+            <li data-link="../mp3/P10-2.mp3"><i class="play-btn"></i>雨声(mp3)</li>
+            <li data-link="mp3/walking.mp3" class="pause"><i class="play-btn"></i>脚步声(mp3)<span class="time">00:01 / 00:04</span></li>
+        </ul>
+        <script src="d4cb4eab9402ff56e28f.js"></script><link rel="stylesheet" href="https://gist-assets.github.com/assets/embed-e8861c84ff85edae1cf9869dd551c98d.css"><div id="gist11867817" class="gist">
+        <div class="gist-file">
+          <div class="gist-data gist-syntax">
+            
+
+
+
+    <div class="file-data">
+      <table cellpadding="0" cellspacing="0" class="lines highlight">
+        <tbody><tr>
+          <td class="line-numbers">
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L1" rel="file-muplayer_playlist_demo-js-L1">1</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L2" rel="file-muplayer_playlist_demo-js-L2">2</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L3" rel="file-muplayer_playlist_demo-js-L3">3</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L4" rel="file-muplayer_playlist_demo-js-L4">4</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L5" rel="file-muplayer_playlist_demo-js-L5">5</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L6" rel="file-muplayer_playlist_demo-js-L6">6</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L7" rel="file-muplayer_playlist_demo-js-L7">7</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L8" rel="file-muplayer_playlist_demo-js-L8">8</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L9" rel="file-muplayer_playlist_demo-js-L9">9</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L10" rel="file-muplayer_playlist_demo-js-L10">10</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L11" rel="file-muplayer_playlist_demo-js-L11">11</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L12" rel="file-muplayer_playlist_demo-js-L12">12</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L13" rel="file-muplayer_playlist_demo-js-L13">13</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L14" rel="file-muplayer_playlist_demo-js-L14">14</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L15" rel="file-muplayer_playlist_demo-js-L15">15</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L16" rel="file-muplayer_playlist_demo-js-L16">16</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L17" rel="file-muplayer_playlist_demo-js-L17">17</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L18" rel="file-muplayer_playlist_demo-js-L18">18</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L19" rel="file-muplayer_playlist_demo-js-L19">19</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L20" rel="file-muplayer_playlist_demo-js-L20">20</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L21" rel="file-muplayer_playlist_demo-js-L21">21</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L22" rel="file-muplayer_playlist_demo-js-L22">22</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L23" rel="file-muplayer_playlist_demo-js-L23">23</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L24" rel="file-muplayer_playlist_demo-js-L24">24</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L25" rel="file-muplayer_playlist_demo-js-L25">25</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L26" rel="file-muplayer_playlist_demo-js-L26">26</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L27" rel="file-muplayer_playlist_demo-js-L27">27</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L28" rel="file-muplayer_playlist_demo-js-L28">28</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L29" rel="file-muplayer_playlist_demo-js-L29">29</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L30" rel="file-muplayer_playlist_demo-js-L30">30</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L31" rel="file-muplayer_playlist_demo-js-L31">31</span>
+            <span class="line-number" id="file-muplayer_playlist_demo-js-L32" rel="file-muplayer_playlist_demo-js-L32">32</span>
+          </td>
+          <td class="line-data">
+            <pre class="line-pre"><div class="line" id="file-muplayer_playlist_demo-js-LC1"><span class="c1">// 通过全局变量的方式初始化</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC2"><span class="kd">var</span> <span class="nx">player</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">_mu</span><span class="p">.</span><span class="nx">Player</span><span class="p">({</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC3">        <span class="nx">mode</span><span class="o">:</span> <span class="s1">'list'</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC4">    <span class="p">}),</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC5">    <span class="nx">$pl</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'#playlist-demo'</span><span class="p">),</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC6">    <span class="nx">reset</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC7">        <span class="nx">$pl</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'&gt; li'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'playing pause'</span><span class="p">)</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC8">            <span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'.time'</span><span class="p">).</span><span class="nx">remove</span><span class="p">();</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC9">    <span class="p">},</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC10">    <span class="nx">findCurrItem</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC11">        <span class="k">return</span> <span class="nx">$pl</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'[data-link="'</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">getCur</span><span class="p">()</span> <span class="o">+</span> <span class="s1">'"]'</span><span class="p">);</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC12">    <span class="p">},</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC13">    <span class="nx">$time</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">'&lt;span class="time"&gt;&lt;/span&gt;'</span><span class="p">);</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC14">&nbsp;</div><div class="line" id="file-muplayer_playlist_demo-js-LC15"><span class="nx">$pl</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'click'</span><span class="p">,</span> <span class="s1">'&gt; li'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC16">    <span class="k">if</span> <span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">hasClass</span><span class="p">(</span><span class="s1">'playing'</span><span class="p">))</span> <span class="p">{</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC17">        <span class="nx">player</span><span class="p">.</span><span class="nx">pause</span><span class="p">();</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC18">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC19">        <span class="kd">var</span> <span class="nx">link</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">data</span><span class="p">(</span><span class="s1">'link'</span><span class="p">);</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC20">        <span class="nx">player</span><span class="p">.</span><span class="nx">reset</span><span class="p">().</span><span class="nx">add</span><span class="p">(</span><span class="nx">link</span><span class="p">).</span><span class="nx">play</span><span class="p">();</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC21">    <span class="p">}</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC22"><span class="p">});</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC23">&nbsp;</div><div class="line" id="file-muplayer_playlist_demo-js-LC24"><span class="nx">player</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'playing pause'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC25">    <span class="nx">reset</span><span class="p">();</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC26">    <span class="nx">findCurrItem</span><span class="p">().</span><span class="nx">addClass</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">getState</span><span class="p">()).</span><span class="nx">append</span><span class="p">(</span><span class="nx">$time</span><span class="p">);</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC27"><span class="p">}).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'ended'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC28">    <span class="nx">player</span><span class="p">.</span><span class="nx">stop</span><span class="p">();</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC29">    <span class="nx">reset</span><span class="p">();</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC30"><span class="p">}).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'timeupdate'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC31">    <span class="nx">$time</span><span class="p">.</span><span class="nx">text</span><span class="p">(</span><span class="nx">player</span><span class="p">.</span><span class="nx">curPos</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' / '</span> <span class="o">+</span> <span class="nx">player</span><span class="p">.</span><span class="nx">duration</span><span class="p">(</span><span class="kc">true</span><span class="p">));</span></div><div class="line" id="file-muplayer_playlist_demo-js-LC32"><span class="p">});</span></div></pre>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+
+          </div>
+          <div class="gist-meta">
+            <a href="https://gist.github.com/hustKiwi/d4cb4eab9402ff56e28f/raw/muplayer_playlist_demo.js" style="float:right">view raw</a>
+            <a href="https://gist.github.com/hustKiwi/d4cb4eab9402ff56e28f#file-muplayer_playlist_demo-js">muplayer_playlist_demo.js</a>
+            hosted with ❤ by <a href="https://github.com/">GitHub</a>
+          </div>
+        </div>
+</div>
+
+    </div>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="player.js"></script>
+<script>
+// 通过全局变量的方式初始化
+var player = window.player = new _mu.Player({
+        mode: 'list',
+        baseDir: 'dist'
+    }),
+    $pl = $('#playlist-demo'),
+    reset = function() {
+        $pl.find('> li').removeClass('playing pause')
+            .find('.time').remove();
+    },
+    findCurrItem = function() {
+        var link = player.getCur();
+        link = link.substring(link.indexOf('mp3/'));
+        return $pl.find('[data-link="' + link + '"]');
+    },
+    $time = $('<span class="time"></span>');
+
+$pl.on('click', '> li', function() {
+    var $this = $(this);
+    if ($this.hasClass('playing')) {
+        player.pause();
+    } else {
+        player.reset().add($this.data('link')).play();
+    }
+});
+
+player.on('playing pause', function() {
+    reset();
+    findCurrItem().addClass(player.getState()).append($time);
+}).on('ended', reset).on('timeupdate', function() {
+    $time.text(player.curPos(true) + ' / ' + player.duration(true));
+});
+</script><div id="muplayer_container_1404750614051" style="width: 1px; height: 1px; overflow: hidden"><object data="http://labs.music.baidu.com/demo/muplayer/doc/dist/muplayer_mp3.swf" type="application/x-shockwave-flash" id="muplayer_2" width="1" height="1"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"><param name="expressInstaller" value="dist/undefined"><param name="flashvars" value="_instanceName=_mu.engines.MP3Core_muplayer_2&amp;_buffertime=5000"><param name="movie" value="dist/muplayer_mp3.swf"></object><object data="http://labs.music.baidu.com/demo/muplayer/doc/dist/muplayer_mp4.swf" type="application/x-shockwave-flash" id="muplayer_3" width="1" height="1"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"><param name="expressInstaller" value="dist/undefined"><param name="flashvars" value="_instanceName=_mu.engines.MP4Core_muplayer_3&amp;_buffertime=5000"><param name="movie" value="dist/muplayer_mp4.swf"></object></div>
+</body></html>

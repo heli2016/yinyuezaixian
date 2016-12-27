@@ -1,0 +1,76 @@
+<!-- saved from url=(0064)http://labs.music.baidu.com/demo/muplayer/doc/playlist-demo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="http://labs.music.baidu.com/demo/muplayer/doc/bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://labs.music.baidu.com/demo/muplayer/doc/css/playlist-demo.css">
+
+</head><body><div class="mod">
+    <div class="hd">播放列表</div>
+    <div class="bd">
+        <ul id="playlist-demo" style="overflow-y: scroll;height:400px;width:400px;">
+            <li data-link="mp3/P11-1.mp3" class="pause"><i class="play-btn"></i>P11-1.mp3 <a class="icon-remove"></a></li>
+            <li data-link="mp3/P13-02.mp3"><i class="play-btn"></i>P13-02.mp3</li>
+            <li data-link="mp3/P13-4.mp3"><i class="play-btn"></i>P13-4.mp3</li>
+            <li data-link="mp3/P14-1.mp3" class="pause"><i class="play-btn"></i>P14-1.mp3</li>
+            <li data-link="mp3/P14-2.mp3"><i class="play-btn"></i>P14-2.mp3</li>
+            <li data-link="mp3/P14-3.mp3"><i class="play-btn"></i>P14-3.mp3</li>
+            <li data-link="mp3/P15.mp3" class="pause"><i class="play-btn"></i>P15.mp3</li>
+            <li data-link="mp3/P16.mp3"><i class="play-btn"></i>P16.mp3</li>
+            <li data-link="mp3/P17-1.mp3"><i class="play-btn"></i>P17-1.mp3</li>
+            <li data-link="mp3/P17-2.mp3" class="pause"><i class="play-btn"></i>P17-2.mp3</li>
+            <li data-link="mp3/P18-1.mp3"><i class="play-btn"></i>P18-1.mp3</li>
+            <li data-link="mp3/P18-2.mp3"><i class="play-btn"></i>P18-2.mp3</li>
+            <li data-link="mp3/P19.mp3" class="pause"><i class="play-btn"></i>P19.mp3</li>
+            <li data-link="mp3/P10-2.mp3"><i class="play-btn"></i>P10-2.mp3</li>
+            <li data-link="mp3/P11-2.mp3"><i class="play-btn"></i>P11-2.mp3</li>
+        </ul>
+		<!--
+        <script src="./playlist-demo_files/d4cb4eab9402ff56e28f.js"></script>
+		-->
+
+    </div>
+</div>
+
+<script src="./playlist-demo_files/jquery.min.js"></script>
+<script src="./playlist-demo_files/player.js"></script>
+<script>
+// 通过全局变量的方式初始化
+var player = window.player = new _mu.Player({
+        mode: 'list',
+        baseDir: 'dist'
+    }),
+    $pl = $('#playlist-demo'),
+    reset = function() {
+        $pl.find('> li').removeClass('playing pause')
+            .find('.time').remove();
+    },
+    findCurrItem = function() {
+        var link = player.getCur();
+        link = link.substring(link.indexOf('mp3/'));
+        return $pl.find('[data-link="' + link + '"]');
+    },
+    $time = $('<span class="time"></span>');
+
+$pl.on('click', '> li', function() {
+    var $this = $(this);
+    if ($this.hasClass('playing')) {
+        player.pause();
+    } else {
+        player.reset().add($this.data('link')).play();
+    }
+});
+
+player.on('playing pause', function() {
+    reset();
+    findCurrItem().addClass(player.getState()).append($time);
+}).on('ended', reset).on('timeupdate', function() {
+    $time.text(player.curPos(true) + ' / ' + player.duration(true));
+});
+$(function(){
+	$pl = $('#playlist-demo');
+	$pl.find('> li a').click(function(e){
+		alert() ;
+		e.stopPropagation();
+	}) ;
+}) ;
+</script>
+</body></html>

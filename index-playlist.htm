@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Dewplayer</title>
+<link rel="stylesheet" type="text/css" href="http://labs.music.baidu.com/demo/muplayer/doc/css/playlist-demo.css">
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!- 引入对应版本的MuPlayer，要置于jQuery之后。->
+<script src="http://mu7.bdstatic.com/cms/app/muplayer/0_9_1/player.js"></script> 
+</head>
+<body>
+
+<ul id="playlist-demo" style="overflow-y: scroll; height: 220px;">
+            <li data-link="mp3/P10-2.mp3"><i class="play-btn"></i>P10-2.mp3</li>
+            <li data-link="mp3/coins.m4a"><i class="play-btn"></i>钢蹦声(m4a)</li>
+            <li data-link="mp3/walking.mp3"><i class="play-btn"></i>脚步声(mp3)</li>            
+        </ul>
+<script>
+// 初始化一个MuPlayer的实例。注意，我们默认使用了_mu全局命名空间。
+//var player = new _mu.Player({
+        // baseDir是必填初始化参数，指向刚才签出的MuPlayer静态资源目录
+//        baseDir: 'http://mu7.bdstatic.com/cms/app/muplayer/0_9_1/'
+//    });
+ 
+// 通过add方法添加需要播放的音频，并调用play方法开始播放。
+//player.add('./mp3/P10-2.mp3').play();
+
+// 通过全局变量的方式初始化
+var player = new _mu.Player({
+        mode: 'list'
+    }),
+    $pl = $('#playlist-demo'),
+    reset = function() {
+        $pl.find('> li').removeClass('playing pause')
+            .find('.time').remove();
+    },
+    findCurrItem = function() {
+        return $pl.find('[data-link="' + player.getCur() + '"]');
+    },
+    $time = $('<span class="time"></span>');
+ 
+$pl.on('click', '> li', function() {
+	//alert() ;
+    if ($(this).hasClass('playing')) {
+        player.pause();
+    } else {
+        var link = $(this).data('link');
+		//alert(link) ;
+        player.reset().add(link).play();
+		alert($(this).html()) ;
+		$(this).addClass("playing") ;
+    }
+});
+ 
+player.on('playing pause', function() {
+    reset();
+    findCurrItem().addClass(player.getState()).append($time);
+}).on('ended', function() {
+    player.stop();
+    reset();
+}).on('timeupdate', function() {
+    $time.text(player.curPos(true) + ' / ' + player.duration(true));
+});
+</script>
+</body>
+</html>

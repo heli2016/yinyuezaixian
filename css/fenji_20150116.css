@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document
+*/
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img, h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+body{ color:#1D1D1D; font-size:13px;font-style:normal; font-weight:normal; font-family:"宋体",Verdana,sans-serif;}
+em, b, i{font-style:normal;}
+p{line-height:1.25em;}
+a{color:#1D1D1D;text-decoration:none;font-family:"宋体",Verdana,sans-serif; cursor:pointer;}
+a:link, a:visited{}
+a:hover, a:active{text-decoration:underline; background-color:#FF0;}
+a.on:hover, a.cur:hover, .on a:hover, .cur a:hover{text-decoration:none;}
+img, a img{border:0 none;}
+img.no_border{background:none;border:0 none;}
+ul,li, ol{list-style-type:none; float:left;}
+.clear{clear: both; font-size:1px; line-height:1px; height:1px; overflow:hidden; width:100%;}
+.clear5{clear: both;height:5px; overflow:hidden; width:100%;}
+.clear25{clear: both;height:25px; overflow:hidden; width:100%;}
+.maring10 { margin-top:10px;}
+.maring20 { margin-top:20px;}
+.padding5 { padding-left:5px;}
+/* 分页 题库列表 分级 */
+.body{ width:1000px; height:600px; margin:0 auto;}
+.diceng{ width:1000px; height:600px; margin:0 auto; position:absolute;}
+.left{ width:132px; height:600px; margin:0; float:left;  background:url(../image/left.jpg) no-repeat; position:relative;}
+.right{ width:868px; height:600px; margin:0; margin-left:0px; float:left; position:relative;}
+.rightside1{ width:868px; height:60px; background:#99cc00; margin:0; margin-left:0px; float:left; position:relative; overflow:hidden;}
+.rightside2 { width:868px; height:80px; background:#ffcc66; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+.rightside3 { width:868px; height:400px; background:#ffffcc; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+.rightside4 { width:868px; height:60px; background:#ffcc66; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+
+
+.dingceng{ width:1000px; height:600px; margin:0; position:absolute;}
+.topimg{ width:110px; height:100px; float:left; margin:0; margin-left:635px; margin-top:40px; border:10px solid #84ccc9;}
+.bottomimg{width:120px; height:260px; float:left; margin:0; margin-left:840px; margin-top:180px;}
+
+
+.show{ width:868px; height:600px; margin:0; margin-left:132px; float:left; position:absolute;}
+.showside1{ width:868px; height:60px; margin:0; margin-left:0px; float:left; position:relative; overflow:hidden;}
+.showside1 .name{width:150px; height:20px; font-size:20px; font-weight:bold; color:#FFF; margin:0; margin-left:20px; margin-top:30px;}
+.showside1 .tel{width:250px; height:20x; font-size:20px; font-weight:bold; color:#FFF; margin:0; margin-left:80px; margin-top:30px;}
+.showside1 .welcome{width:100px; height:20x; font-size:20px; font-weight:bold; color:#FFF; margin:0; margin-left:150px; margin-top:30px;}
+.showside1 .welcome .span{font-size:20px; font-weight:bold; color:#FFF;}
+.showside1 .exit{width:50px; height:20x; font-size:20px; font-weight:bold; text-decoration:underline; color:#FFF; margin:0; margin-left:790px; margin-top:30px;}
+.showside1 .exit a:visited{ color:#FFF;}
+.showside1 .exit a:hover{ color:blue;}
+
+
+.showside2 { width:868px; height:80px; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+.showside2 .menu{width:450px; height:80px; margin:0; margin-left:20px; margin-top:0px; }
+.showside2 .menu a{
+	text-decoration:none;
+	color:#FFF;
+	display:block; 
+    background:none; 
+}
+.showside2 .menu a:link{color:#FFF;}
+.showside2 .menu a:visited{background:#0CF;}
+.showside2 .menu a:hover{background:#0CC;}
+.showside2 .menu a:active{background:#0CF;}
+.menul{
+	float:left;
+	width:200px;
+	height:60px;
+	position:relative;
+	margin-top:10px;
+}
+.menur{
+	float:left;
+	width:180px;
+	height:40px;
+	position:relative;
+	margin-top:10px;
+}
+.store{
+	height:40px;
+	text-align:center;
+	font-size:30px;
+	font-weight:bold;
+	color:#FFF;
+}
+.test{
+	width:100%;
+	height:20px;
+	font-size:13px;
+}
+.ml30{margin-left:30px;}
+.his{
+	text-align:center;
+	font-size:30px;
+	font-weight:bold;
+	color:#FFF;
+}
+.showside2 .menu .line{
+	font-size:30px;
+	font-weight:bold;
+	padding:10px 2px 0 2px;
+	color:#FFF;
+}
+
+
+.showside3 { width:868px; height:400px; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+.showside3 .head{ width:270px; height:25px; font-size:24px; margin:0; margin-left:20px; margin-top:10px;}
+
+.showside3 .xuanze{width:600px; height:25px; margin:0; margin-left:20px; margin-top:5px;}
+.showside3 .xuanze ul {padding:0;margin:0; list-style-type: none;}
+.showside3 .xuanze ul li {float:left; margin:0; margin-left:5px; position:relative;}
+.showside3 .xuanze ul li a:visited , .showside3 .xuanze ul li a:link{ text-align:center; text-decoration:none; font-size:14px; margin:0;}
+.showside3 .xuanze ul li a:hover, .showside3 .xuanze ul li a:hover{ background:#99cc00;}
+.showside3 .xuanze .line2{ font-size:14px;}
+
+.showside3 .testtable{ width:690px;  float:left;  margin:0;font-size:20px; margin-left:20px; margin-top:30px;}
+.showside3 .testtable .tr{ width:690px; height:15px; float:left; margin:0; margin-left:0px; margin-top:0px; padding:0px;}
+.showside3 .testtable .tr .td{width:230px; height:15px;  float:left; margin:0; margin-left:0px; margin-top:0px; padding:0px;}
+
+.pdleft45 { padding-left:45px;}
+.showside4 { width:868px; height:60px; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+
+.showside4 .pagenum{width:620px; height:40px; float:left; margin:0; margin-left:20px; margin-top:5px; line-height:38px;}
+.showside4 .pagenum .bu{ background:none; margin:0;}
+.showside4 .pagenum ul{ left:0px; position:relative; top:0px;}
+.showside4 .pagenum li{width:38px; height:38px; float:left; text-align:center; font-size:20px; margin:0; margin-left:10px; background:#fbfbfb;}
+.showside4 .pagenum li a:visited,.showside4 .pagenum li a:link{text-align:center; text-decoration:none; }
+.showside4 .pagenum ul li a:hover,.showside4 .pagenum li a:active{text-align:center; text-decoration:none; color:#FFF}
+.showside4 .pagenum ul .active{ background:#ffba00; }
+.showside4 .pagenum .pre{float:left;}
+.showside4 .pagenum .next{float:right;}
+.showside4 .pagenum .pre,.showside4 .pagenum .next{width:38px; height:38px; margin:0;}
+.showside4 .pagenum .pre a,.showside4 .pagenum .next a{ text-decoration:none;}

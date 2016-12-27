@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img, h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+body{ color:#1D1D1D; font-size:13px;font-style:normal; font-weight:normal; font-family:"宋体",Verdana,sans-serif;}
+em, b, i{font-style:normal;}
+p{line-height:1.25em;}
+a{color:#1D1D1D;text-decoration:none;font-family:"宋体",Verdana,sans-serif;}
+a:link, a:visited{}
+a:hover, a:active{text-decoration:underline; background-color:#FF0;}
+a.on:hover, a.cur:hover, .on a:hover, .cur a:hover{text-decoration:none;}
+img, a img{border:0 none;}
+img.no_border{background:none;border:0 none;}
+ul,li, ol{list-style-type:none; float:left;}
+.clear{clear: both; font-size:1px; line-height:1px; height:1px; overflow:hidden; width:100%;}
+.clear5{clear: both;height:5px; overflow:hidden; width:100%;}
+.clear25{clear: both;height:25px; overflow:hidden; width:100%;}
+.maring10 { margin-top:10px;}
+.maring20 { margin-top:20px;}
+.padding5 { padding-left:5px;}
+/* 首页 */
+.body{ width:1000px; height:600px; margin:0 auto;}
+/*第一层*/
+.diceng{ width:1000px; height:600px; margin:0 auto; position:absolute;}
+
+.leftside{ width:132px; height:600px; margin:0; float:left;  background:url(../image/left.jpg) no-repeat; position:relative;}
+
+.right{ width:868px; height:600px; margin:0; margin-left:0px; float:left; position:relative;}
+.rightside-0{ width:868px; height:450px; background:#ffffcb; margin:0; margin-left:0px; float:left; position:relative; overflow:hidden;}
+.rightside-450 { width:868px; height:150px; background:#98cd01; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+/* 第二层*/
+.dingceng{ width:1000px; height:600px; margin:0; position:absolute;}
+.top1{ width:200px; height:30px; margin:0; margin-left:660px; margin-top:60px;}
+.top1 .text{ font-size:26px; color:#99cc00; font-weight:bold; text-align:right;}
+.top2{ width:100px; height:10px; margin:0; margin-left:760px; margin-top:30px;}
+.top2 .text{ font-size:12px; color:#99cc00; text-align:right;}
+.middleimg{ width:240px; height:470px; float:right; margin:0; margin-right:0px; margin-top:-5px;}
+
+.zhuce{ width:440px; height:350px; float:left;background:#f8b27f; margin:0; margin-left:180px; margin-top:-45px; overflow:hidden; border:5px solid #ffcb5b; position:relative;}
+
+.zhuce .head{ width:434px; height:44px; float:left; margin:0; margin-top:0px; background:#98cd01; border:3px solid #fecf65;}
+.zhuce .head h1{color:#FFF; margin:0; margin-left:20px; margin-top:5px;}
+.zhuce .xinxi{width:440px; float:left; font-size:12px; margin:0; margin-top:5px;}
+.zhuce .text4{width:80px; float:left; font-size:12px; margin:0; margin-top:5px; text-align:justify;}
+.zhuce .xinxi ul{  height:25px; margin:0; margin-left:70px; list-style-type: none;}
+.zhuce .xinxi .table .ul{ width:80px; height:25px; margin:0; margin-left:70px; list-style-type: none; text-align:justify;}
+
+.zhuce .bottom{ width:250px; height:24px; float:left; margin:0; margin-top:25px; margin-left:70px; background:#98cd01; border:3px solid #fecf65; text-align:center;}
+.zhuce .bottom a{color:#FFF; font-size:18px; text-align:center;}
+.zhuce .bottom a:hover{}
+.zhuce .tishi{ float:left; margin:0; margin-top:45px; margin-left:70px; font-size:20px;}

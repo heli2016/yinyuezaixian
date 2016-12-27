@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, div, p, ul, ol, dl, dt, dd, li, form, input, table, img, h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+body{ color:#1D1D1D; font-size:13px;font-style:normal; font-weight:normal; font-family:"宋体",Verdana,sans-serif;}
+em, b, i{font-style:normal;}
+p{line-height:1.25em;}
+a{color:#1D1D1D;text-decoration:none;font-family:"宋体",Verdana,sans-serif; cursor:pointer;}
+a:link, a:visited{}
+a:hover, a:active{text-decoration:underline; background-color:#FF0;}
+a.on:hover, a.cur:hover, .on a:hover, .cur a:hover{text-decoration:none;}
+img, a img{border:0 none;}
+img.no_border{background:none;border:0 none;}
+ul,li, ol{list-style-type:none; float:left;}
+.clear{clear: both; font-size:1px; line-height:1px; height:1px; overflow:hidden; width:100%;}
+.clear5{clear: both;height:5px; overflow:hidden; width:100%;}
+.clear25{clear: both;height:25px; overflow:hidden; width:100%;}
+.maring10 { margin-top:10px;}
+.maring20 { margin-top:20px;}
+.padding5 { padding-left:5px;}
+/* 分页 测试页面 */
+.body{ width:1000px; height:600px; margin:0 auto;}
+.diceng{ width:1000px; height:600px; margin:0 auto; position:absolute;}
+.left{ width:132px; height:600px; margin:0; float:left;  background:url(../image/left.jpg) no-repeat; position:relative;}
+.right{ width:868px; height:600px; margin:0; margin-left:0px; float:left; position:relative;}
+.rightside1{ width:868px; height:60px; background:#99cc00; margin:0; margin-left:0px; float:left; position:relative; overflow:hidden;}
+.rightside2 { width:868px; height:5px; background:#ffcc66; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+.time{width:150px; height:40px; margin:0; margin-left:650px;}
+.time h2{ margin:0; margin-top:8px;}
+.rightside3 { width:868px; height:555px; background:#ffffcc; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+.rightside3{background-image:url("../image/sy008.png"); background-repeat:repeat-x|repeat-y;}
+.rightside4 { width:868px; height:40px; background:#ffcc66; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+
+
+.dingceng{ width:1000px; height:600px; margin:0; position:absolute;}
+.topimg{ width:110px; height:100px; float:left; margin:0; margin-left:635px; margin-top:20px; border:10px solid #84ccc9;}
+.bottomimg{width:120px; height:260px; float:left; margin:0; margin-left:840px; margin-top:180px;}
+
+
+.show{ width:868px; height:600px; margin:0; margin-left:132px; float:left; position:absolute;}
+.showside1{ width:868px; height:60px; margin:0; margin-left:0px; float:left; position:relative; overflow:hidden;}
+.showside1 .name{width:150px; height:20px; font-size:20px; font-weight:bold; color:#FFF; margin:0; margin-left:20px; margin-top:30px;}
+.showside1 .tel{width:250px; height:20x; font-size:20px; font-weight:bold; color:#FFF; margin:0; margin-left:80px; margin-top:30px;}
+.showside1 .welcome{width:100px; height:20x; font-size:20px; font-weight:bold; color:#FFF; margin:0; margin-left:150px; margin-top:30px;}
+.showside1 .welcome .span{font-size:20px; font-weight:bold; color:#FFF;}
+.showside1 .exit{width:50px; height:20x; font-size:20px; font-weight:bold; text-decoration:underline; color:#FFF; margin:0; margin-left:790px; margin-top:30px;}
+.showside1 .exit a:visited{ color:#FFF;}
+.showside1 .exit a:hover{ color:blue;}
+
+
+.showside2 { width:868px; height:5px; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+.showside2 .menu{width:450px; height:80px; margin:0; margin-left:20px; margin-top:0px; }
+.showside2 .menu h1{margin:0; margin-left:10px; margin-top:20px; position:relative;}
+.showside2 .menu ul {padding:0;margin:0; list-style-type: none;}
+
+.showside2 .menu ul li {float:left; margin:0; margin-left:10px; position:relative;}
+
+.showside2 .menu ul li a:visited , .showside2 .menu ul li a:link{
+display:block; 
+text-align:center; 
+text-decoration:none; 
+color:#FFF; 
+font-size:30px;
+margin:0px;
+padding:10px 15px 5px 15px;
+}
+.showside2 .menu ul li a:hover,.showside2 .menu ul li a:active ,.showside2 .menu ul li a:visited { border:3px solid #014a86; border-radius:15px; background:none; letter-spacing:10px;}
+
+.showside2 .menu ul li ul {
+display: none;
+}
+.showside2 .menu ul li:hover a {
+color:#fff; 
+
+}
+
+.showside2 .menu ul li:hover ul {
+display:block; 
+position:relative;
+margin:0;
+margin-left:0px;
+}
+
+
+.showside2 .menu ul li:hover ul li a {
+display:block; 
+background:none; 
+font-size:13px;
+width:80px;
+text-align:center;
+float:left;
+border:none;
+}
+
+.showside2 .menu ul li:hover ul li a:hover {
+	background-color:#99cc00;
+	color:#FFFFFF;
+	border:none;
+	border-radius:0px;
+	letter-spacing:normal;
+}
+.showside2 .menu .line{
+	font-size:30px;
+	font-weight:bold;
+	padding:10px 2px 0 2px;
+	color:#FFF;
+}
+
+
+.showside3 { width:868px; height:555px; position:relative; overflow:hidden;}
+.showside3 .shiti{ margin:0; margin-left:20px;}
+
+.showside3 .shiti .timu{margin:0; margin-top:5px;}
+
+.showside3 .shiti .timu a{width:25px; height:25px;}
+.showside3 .shiti .timu a:link{}
+.showside3 .shiti .timu a:hover , .showside3 .shiti .timu a:active{ background:#00C;}
+.showside3 .shiti .timu .bimg{margin:0;}
+.showside3 .shiti .timu p{margin-left:35px; margin-top:-25px; font-size:14px;line-height:24px; color:#F00;}
+.showside3 .shiti .timu .pimg{position:absolute; top:5px; right:10px;}
+.showside3 .shiti img{margin:0; margin-left:30px; width:auto; height:auto; opacity:0.7;}
+.showside3 .shiti img{max-height:90px; max-width:800px;}
+
+.xuxian{ width:800px; height:5px; margin:0; border-bottom:2px dotted #000;}
+
+.pdtop10{ padding-top:10px;}
+
+
+.showside4 { width:868px; height:40px; margin:0; margin-left:0px; margin-top:0px; float:left; position:relative; overflow:hidden;}
+.showside4 .sx{ width:390px; height:25px; float:left; margin:0; margin-left:50px; margin-top:5px; border:3px solid #ef0409; background:#98cb00; border-radius:12px;}
+.showside4 .sx .prete{ width:45px; height:15px; float:left; font-size:14px; color:#5d6cbd; margin:0; margin-top:5px; margin-left:40px;}
+.showside4 .sx .tijiao{ width:30px; height:15px; float:left; font-size:14px; color:#f7000e; margin:0; margin-left:90px; margin-top:5px;}
+.showside4 .sx .nextte{width:45px; height:15px; float:right; font-size:14px; color:#5d6cbd; margin:0; margin-top:5px; margin-right:40px;}

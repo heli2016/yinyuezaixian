@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+    <title>Ounage Playlist</title>
+    <creator>Dew</creator>
+    <link>http://www.blup.fr/</link>
+    <info>The Best Playlist for Testing</info>
+    <image>covers/tracklist.jpg</image>
+
+    <trackList>
+
+        <track>
+          <location>mp3/P10-2.mp3</location>
+          <title>P10-2.mp3</title>
+        </track>
+        
+        <track>
+          <location>P11-1.mp3</location>
+          <title>P11-1.mp3</title>
+        </track>
+        
+        <track>
+          <location>mp3/P11-2.mp3</location>
+          <title>Le Hussard sur le Toit</title>
+        </track>
+
+        <track>
+          <location>mp3/P12-1.mp3</location>
+          <title>P12-1.mp3</title>
+        </track>
+
+        <track>
+          <location>mp3/P12-03.mp3</location>
+          <title>P12-03</title>
+        </track>
+
+        <track>
+          <location>mp3/P11-2.mp3</location>
+          <title>Le Hussard sur le Toit</title>
+        </track>
+
+        <track>
+          <location>mp3/P11-2.mp3</location>
+          <title>Le Hussard sur le Toit</title>
+        </track>
+
+        <track>
+          <location>P11-1.mp3</location>
+          <title>P11-1.mp3</title>
+        </track>
+        
+        <track>
+          <location>mp3/P11-2.mp3</location>
+          <title>Le Hussard sur le Toit</title>
+        </track>
+
+        <track>
+          <location>mp3/P12-1.mp3</location>
+          <title>P12-1.mp3</title>
+        </track>
+
+        <track>
+          <location>mp3/P12-03.mp3</location>
+          <title>P12-03</title>
+        </track>
+
+        <track>
+          <location>mp3/P11-2.mp3</location>
+          <title>Le Hussard sur le Toit</title>
+        </track>
+
+        <track>
+          <location>mp3/P11-2.mp3</location>
+          <title>Le Hussard sur le Toit</title>
+        </track>
+
+    </trackList>
+</playlist>
