@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>首页</title>
 <link href="css/main.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery-1.6.js" ></script>
 </head>
 
 <body class="body">
@@ -29,7 +30,7 @@
 <ul class="text">京ICP备14080032</ul>
 </div>
 <div class="dianji">
-<div class="left ml_40">
+<div class="left">
 <ul class="img">
 <a href=""><img src="image/mianfei.jpg" width="92" height="75" /></a></ul>
 <ul class="text"><a href="">免费试用</a></ul>
@@ -44,15 +45,22 @@
 <a href=""><img src="image/taobao.jpg" /></a></ul>
 <ul class="text"><a href="">商城购买</a></ul>
 </div>
-<div class="left pdleft10">
+<div class="left pdleft10" id="weidian">
 <ul class="img">
 <a href="javascript:;" onmouseover="document.getElementById('weidian_nr').style.display='block';" onmouseout="document.getElementById('weidian_nr').style.display='none';" onmousedown="document.getElementById('weidian_nr').style.display='block';">
 <img src="image/weidian.jpg" /></a></ul>
+
+<ul class="text"><a href=""onmouseover="document.getElementById('weidian_nr').style.display='block';" onmouseout="document.getElementById('weidian_nr').style.display='none';" onmousedown="document.getElementById('weidian_nr').style.display='block';">微店</a></ul>
+</div>
 <div id="weidian_nr">
         <img src="image/weidiancode.jpg" />
     </div>
-<ul class="text"><a href=""onmouseover="document.getElementById('weidian_nr').style.display='block';" onmouseout="document.getElementById('weidian_nr').style.display='none';" onmousedown="document.getElementById('weidian_nr').style.display='block';">微店</a></ul>
-</div>
+    <script type="application/javascript">
+						var X = $('#weidian').offset().top;
+						var Y = $('#weidian').position().left;
+						$("#weidian_nr").css("top",X-300);
+						$("#weidian_nr").css("left",X+240);
+						</script>
 <div class="left pdleft10">
 <ul class="img">
 <a href=""><img src="image/aboutus.jpg" /></a></ul>
