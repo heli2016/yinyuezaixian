@@ -34,7 +34,8 @@ ul,li, ol{list-style-type:none; float:left;}
 .top1 .text{ font-size:26px; color:#99cc00; font-weight:bold; text-align:right;}
 .top2{ width:100px; height:10px; margin:0; margin-left:760px; margin-top:30px;}
 .top2 .text{ font-size:12px; color:#99cc00; text-align:right;}
-
+.qlcookie{ width:300px; height:10px; margin:0; margin-left:460px; margin-top:30px; color:#F00;}
+.qlcookie a{color:blue;}
 
 .login1{ float:right; width:450px; height:265px; margin:0; margin-right:150px; margin-top:22px; position:relative; background:url(../image/login1.png) no-repeat;}
 
